@@ -1,0 +1,27 @@
+{
+  "name": "wuzen",
+  "version": "1.0.0",
+  "description": "Wuzen is a css framework for Doede Jaarsma communicatie",
+  "style": "dist/style/main.css",
+  "sass": "style/xyz.sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pridestalker/wuzen.git"
+  },
+  "files": [
+    "dist/style/*.{css,map}",
+    "style/**/*.{sass, scss}"
+  ],
+  "keywords": [
+    "DoedeJaarsma"
+  ],
+  "author": "Mitch Hijlkema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pridestalker/wuzen/issues"
+  },
+  "homepage": "https://github.com/Pridestalker/wuzen#readme"
+}

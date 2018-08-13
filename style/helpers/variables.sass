@@ -1,0 +1,22 @@
+$grid-columns: 12 !default
+$grid-gutter: 30px !default
+$grid-max-width: 1140px !default
+$fluid-margin: 32px !default
+
+$primary: #113 !default
+$secondary: #331 !default
+$success: #3f826d !default
+$danger: #c03221 !default
+$warning: #e9b44c !default
+$info: #50a2a7 !default
+$white: #f7f7ff !default
+$black: #333333 !default
+
+
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px )
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+$colors: ( "succes": $success, "info": $info, "danger": $danger, "warning": $warning, "white": $white, "black": $black )
+$assets: ( "primary": $primary, "secondary": $secondary )
+
+$colors: map-merge( $colors, $assets)

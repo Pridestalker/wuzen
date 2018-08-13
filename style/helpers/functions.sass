@@ -1,0 +1,30 @@
+=respond-above( $breakpoint )
+  @if map-has-key( $grid-breakpoints, $breakpoint )
+    $breakpoint-value: map-get( $grid-breakpoints, $breakpoint )
+    @media screen and ( min-width: $breakpoint-value)
+      @content
+
+  @else
+
+    @warn 'invalid breakpoint: #{$breakpoint}.'
+
+
+=respond-between( $lower, $higher )
+  @if map-has-key( $grid-breakpoints, $lower ) and map-has-key( $grid-breakpoints, $higher )
+    $lower-breakpoint: map-get( $grid-breakpoints, $lower )
+    $higher-breakpoint: map-get( $grid-breakpoints, $higher )
+    @media screen and ( min-width: $lower-breakpoint ) and ( max-width: ( $higher-breakpoint -1 ) )
+      @content
+  @else
+    @if ( map-has-key( $grid-breakpoints, $lower ) == false )
+      @warn 'Your lower breakpoint is invalid at: #{$lower}.'
+    @if ( map-has-key( $grid-breakpoints, $higher ) == false )
+      @warn 'Your upper breakpoint is invalid at: #{$higher}.'
+
+=respond-below( $breakpoint )
+  @if map-has-key( $grid-breakpoints, $breakpoint )
+    $breakpoint-value: map-get( $grid-breakpoints, $breakpoint)
+    @media screen and (max-width: $breakpoint-value - 1)
+      @content
+  @else
+    @warn 'Invalid breakpoint: #{$breakpoint}.'

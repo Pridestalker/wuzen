@@ -1,0 +1,21 @@
+.containment
+  display: flex
+  +respond-above( xs )
+    margin: 0 auto
+    width: 95%
+  +respond-above( sm )
+  +respond-above( md )
+  +respond-above( lg )
+  +respond-above( xl )
+
+  &.is-wrapped
+    flex-wrap: wrap
+  &.is-centered
+    justify-content: center
+    justify-items: center
+
+.containment-fluid
+  @extend .containment
+  +respond-above( xs )
+    width: auto
+    margin: 0 $fluid-margin

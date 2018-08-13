@@ -1,0 +1,18 @@
+.containment
+  .column
+    width: auto
+    min-width: calc( 100% / #{$grid-columns} - #{$grid-gutter} )
+    flex-basis: 0
+    flex-grow: 1
+    flex-shrink: 1
+  @for $i from 1 through $grid-columns
+    .column-#{$i}
+      width: calc( 100% / #{$grid-columns} * #{$i} - #{$grid-gutter} )
+      margin-right: $grid-gutter / 2
+      margin-left: $grid-gutter / 2
+      &:last-child
+        margin-right: 0
+      &:first-child
+        margin-left: 0
+      +respond-below( sm )
+        width: 100%
