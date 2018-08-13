@@ -1,0 +1,18 @@
+.card
+  +box-shadow
+  &.rounded
+    +border-radius
+    .card-media:first-child
+      img
+        border-top-left-radius: $border-radius
+        border-top-right-radius: $border-radius
+    .card-media:last-child
+      img
+        border-bottom-left-radius: $border-radius
+        border-bottom-right-radius: $border-radius
+  .card-header
+    padding: $more-padding
+    color: $black
+    border-bottom: 1px solid rgba($black, 0.1)
+  .card-content
+    padding: $more-padding

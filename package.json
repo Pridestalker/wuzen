@@ -1,11 +1,12 @@
 {
   "name": "wuzen",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Wuzen is a css framework for Doede Jaarsma communicatie",
   "style": "dist/style/main.css",
   "sass": "style/xyz.sass",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass style/xyz.sass dist/style/main.css --no-cache"
   },
   "repository": {
     "type": "git",

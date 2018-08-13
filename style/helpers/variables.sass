@@ -1,8 +1,13 @@
+// Grid helpers
 $grid-columns: 12 !default
 $grid-gutter: 30px !default
 $grid-max-width: 1140px !default
 $fluid-margin: 32px !default
 
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px )
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+// Color helpers
 $primary: #113 !default
 $secondary: #331 !default
 $success: #3f826d !default
@@ -12,11 +17,27 @@ $info: #50a2a7 !default
 $white: #f7f7ff !default
 $black: #333333 !default
 
-
-$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px )
-$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px)
-
-$colors: ( "succes": $success, "info": $info, "danger": $danger, "warning": $warning, "white": $white, "black": $black )
+$colors: ( "success": $success, "info": $info, "danger": $danger, "warning": $warning, "white": $white, "black": $black )
 $assets: ( "primary": $primary, "secondary": $secondary )
 
 $colors: map-merge( $colors, $assets)
+
+
+// Font helpers
+$font-family: "Roboto" !default
+$font-size: 16px !default
+
+@import url('https://fonts.googleapis.com/css?family=#{$font-family}')
+
+$fontweights: ("lightest": 100, "lighter": 200, "light": 300, "normal": 400, "bolder": 500, "bolderer": 600, "bold": 700, "boldest": 900)
+
+// Paddings
+$basic-padding: 8px !default
+$more-padding: $basic-padding * 2
+$less-padding: $basic-padding / 2
+
+// General helpers
+$box-blur: 10px !default
+$box-y: 10px !default
+$box-x: 5px !default
+$border-radius: 20px !default

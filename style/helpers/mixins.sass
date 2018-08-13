@@ -3,10 +3,12 @@
   -moz-box-sizing: border-box
   box-sizing: border-box
 
-%clearfix
-  *zoom: 1
-  &:before, &:after
-    content: " "
-    display: table
-  &:after
-    clear: both
+=box-shadow($x: $box-x, $y: $box-y, $blur: $box-blur, $color: $black)
+  -webkit-box-shadow: $x $y $blur $color
+  -moz-box-shadow: $x $y $blur $color
+  box-shadow: $x $y $blur $color
+
+=border-radius($border-radius: $border-radius)
+  -webkit-border-radius: $border-radius
+  -moz-border-radius: $border-radius
+  border-radius: $border-radius
