@@ -308,12 +308,6 @@ section {
     font-size: 1em;
     margin-bottom: 1em; }
 
-code {
-  background: #333333;
-  color: #f7f7ff;
-  display: block;
-  padding: 8px; }
-
 .card {
   -webkit-box-shadow: 5px 10px 10px #333333;
   -moz-box-shadow: 5px 10px 10px #333333;
@@ -382,5 +376,25 @@ code {
 
 .color-bg-secondary {
   background: #331; }
+
+.flex-me {
+  display: flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -o-flex; }
+
+.inline-flex-me {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex; }
+
+.block-me {
+  display: block; }
+
+.grid-me {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid; }
 
 /*# sourceMappingURL=main.css.map */
