@@ -12,10 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/Pridestalker/wuzen.git"
   },
-  "files": [
-    "dist/style/*.{css,map}",
-    "style/**/*.{sass, scss}"
-  ],
   "keywords": [
     "DoedeJaarsma"
   ],
