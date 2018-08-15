@@ -282,7 +282,7 @@ section {
   .content h4,
   .content h5,
   .content h6 {
-    color: #333333; }
+    color: #000; }
   .content h1 {
     font-size: 2em;
     margin-bottom: 0.5em; }
@@ -309,9 +309,9 @@ section {
     margin-bottom: 1em; }
 
 .card {
-  -webkit-box-shadow: 5px 10px 10px #333333;
-  -moz-box-shadow: 5px 10px 10px #333333;
-  box-shadow: 5px 10px 10px #333333; }
+  -webkit-box-shadow: 5px 10px 10px #000;
+  -moz-box-shadow: 5px 10px 10px #000;
+  box-shadow: 5px 10px 10px #000; }
   .card.rounded {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -324,10 +324,24 @@ section {
       border-bottom-right-radius: 20px; }
   .card .card-header {
     padding: 16px;
-    color: #333333;
-    border-bottom: 1px solid rgba(51, 51, 51, 0.1); }
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .card .card-content {
     padding: 16px; }
+
+.navigation.flex-me {
+  width: 100%; }
+
+.navi-start {
+  justify-self: start; }
+
+.navi-brand img {
+  max-width: 350px;
+  height: auto; }
+
+a.navi-item {
+  text-decoration: none;
+  color: #50a2a7; }
 
 .color-success {
   color: #3f826d; }
@@ -336,19 +350,19 @@ section {
   color: #50a2a7; }
 
 .color-danger {
-  color: #c03221; }
+  color: #red; }
 
 .color-warning {
   color: #e9b44c; }
 
 .color-white {
-  color: #f7f7ff; }
+  color: #fff; }
 
 .color-black {
-  color: #333333; }
+  color: #333; }
 
 .color-primary {
-  color: #113; }
+  color: #0e1c1d; }
 
 .color-secondary {
   color: #331; }
@@ -360,19 +374,19 @@ section {
   background: #50a2a7; }
 
 .color-bg-danger {
-  background: #c03221; }
+  background: #red; }
 
 .color-bg-warning {
   background: #e9b44c; }
 
 .color-bg-white {
-  background: #f7f7ff; }
+  background: #fff; }
 
 .color-bg-black {
-  background: #333333; }
+  background: #333; }
 
 .color-bg-primary {
-  background: #113; }
+  background: #0e1c1d; }
 
 .color-bg-secondary {
   background: #331; }
@@ -383,6 +397,11 @@ section {
   display: -moz-flex;
   display: -webkit-flex;
   display: -o-flex; }
+  .flex-me.items-center {
+    align-content: center;
+    align-items: center; }
+  .flex-me.items-spaced {
+    justify-content: space-between; }
 
 .inline-flex-me {
   display: inline-flex;

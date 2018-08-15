@@ -8,16 +8,25 @@ $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px )
 $container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px)
 
 // Color helpers
-$primary: #113 !default
-$secondary: #331 !default
-$success: #3f826d !default
-$danger: #c03221 !default
-$warning: #e9b44c !default
-$info: #50a2a7 !default
+$grey: #331 !default
+$blue: #50a2a7 !default
+$green: #3f826d !default
+$red: #c03221 !default
+$yellow: #e9b44c !default
 $white: #f7f7ff !default
-$black: #333333 !default
+$whiter: #fff !default
+$blackish: #333 !default
+$black: #000 !default
 
-$colors: ( "success": $success, "info": $info, "danger": $danger, "warning": $warning, "white": $white, "black": $black )
+$primary: darken($blue, 40%) !default
+$secondary: $grey !default
+$success: $green !default
+$danger: #red !default
+$warning: $yellow !default
+$info: $blue !default
+$link: $blue !default
+
+$colors: ( "success": $success, "info": $info, "danger": $danger, "warning": $warning, "white": $whiter, "black": $blackish )
 $assets: ( "primary": $primary, "secondary": $secondary )
 
 $colors: map-merge( $colors, $assets)
