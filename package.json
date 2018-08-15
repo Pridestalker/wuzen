@@ -1,6 +1,6 @@
 {
   "name": "wuzen",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Wuzen is a css framework for Doede Jaarsma communicatie",
   "style": "dist/style/main.css",
   "sass": "style/xyz.sass",
