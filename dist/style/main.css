@@ -308,25 +308,57 @@ section {
     font-size: 1em;
     margin-bottom: 1em; }
 
-.card {
+.card.shadows {
   -webkit-box-shadow: 5px 10px 10px #000;
   -moz-box-shadow: 5px 10px 10px #000;
   box-shadow: 5px 10px 10px #000; }
-  .card.rounded {
+.card.bordered {
+  border: 1px solid rgba(0, 0, 0, 0.8); }
+.card.rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+  .card.rounded .card-media:first-child img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; }
+  .card.rounded .card-media:last-child img {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
+.card .card-header {
+  padding: 16px;
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.card .card-content {
+  padding: 16px; }
+
+.horizontal-card {
+  display: flex; }
+  .horizontal-card.shadows {
+    -webkit-box-shadow: 5px 10px 10px #000;
+    -moz-box-shadow: 5px 10px 10px #000;
+    box-shadow: 5px 10px 10px #000; }
+  .horizontal-card.bordered {
+    border: 1px solid rgba(0, 0, 0, 0.8); }
+  .horizontal-card.rounded {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px; }
-    .card.rounded .card-media:first-child img {
+    .horizontal-card.rounded .card-media:first-child img {
       border-top-left-radius: 20px;
-      border-top-right-radius: 20px; }
-    .card.rounded .card-media:last-child img {
-      border-bottom-left-radius: 20px;
+      border-bottom-left-radius: 20px; }
+    .horizontal-card.rounded .card-media:last-child img {
+      border-top-right-radius: 20px;
       border-bottom-right-radius: 20px; }
-  .card .card-header {
-    padding: 16px;
-    color: #000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .card .card-content {
+  .horizontal-card .card-left {
+    display: flex;
+    flex-direction: column; }
+  .horizontal-card .card-right {
+    display: flex;
+    flex-direction: column; }
+  .horizontal-card .card-header {
+    margin-bottom: auto;
+    padding: 16px; }
+  .horizontal-card .card-content {
     padding: 16px; }
 
 .navigation.flex-me {
@@ -352,7 +384,7 @@ a.navi-item {
   color: #50a2a7 !important; }
 
 .color-danger {
-  color: #red !important; }
+  color: #c03221 !important; }
 
 .color-warning {
   color: #e9b44c !important; }
@@ -376,7 +408,7 @@ a.navi-item {
   background: #50a2a7; }
 
 .color-bg-danger {
-  background: #red; }
+  background: #c03221; }
 
 .color-bg-warning {
   background: #e9b44c; }

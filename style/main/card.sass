@@ -1,5 +1,8 @@
 .card
-  +box-shadow
+  &.shadows
+    +box-shadow
+  &.bordered
+    border: 1px solid $border-color
   &.rounded
     +border-radius
     .card-media:first-child
@@ -14,5 +17,33 @@
     padding: $more-padding
     color: $black
     border-bottom: 1px solid rgba($black, 0.1)
+  .card-content
+    padding: $more-padding
+
+.horizontal-card
+  display: flex
+  &.shadows
+    +box-shadow
+  &.bordered
+    border: 1px solid $border-color
+  &.rounded
+    +border-radius
+    .card-media:first-child
+      img
+        border-top-left-radius: $border-radius
+        border-bottom-left-radius: $border-radius
+    .card-media:last-child
+      img
+        border-top-right-radius: $border-radius
+        border-bottom-right-radius: $border-radius
+  .card-left
+    display: flex
+    flex-direction: column
+  .card-right
+    display: flex
+    flex-direction: column
+  .card-header
+    margin-bottom: auto
+    padding: $more-padding
   .card-content
     padding: $more-padding
