@@ -342,30 +342,32 @@ section {
 a.navi-item {
   text-decoration: none;
   color: #50a2a7; }
+  a.navi-item.spacer.basic:after {
+    content: " | "; }
 
 .color-success {
-  color: #3f826d; }
+  color: #3f826d !important; }
 
 .color-info {
-  color: #50a2a7; }
+  color: #50a2a7 !important; }
 
 .color-danger {
-  color: #red; }
+  color: #red !important; }
 
 .color-warning {
-  color: #e9b44c; }
+  color: #e9b44c !important; }
 
 .color-white {
-  color: #fff; }
+  color: #fff !important; }
 
 .color-black {
-  color: #333; }
+  color: #333 !important; }
 
 .color-primary {
-  color: #0e1c1d; }
+  color: #0e1c1d !important; }
 
 .color-secondary {
-  color: #331; }
+  color: #331 !important; }
 
 .color-bg-success {
   background: #3f826d; }
