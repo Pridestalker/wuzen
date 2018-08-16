@@ -13,6 +13,7 @@ $blue: #50a2a7 !default
 $green: #3f826d !default
 $red: #c03221 !default
 $yellow: #e9b44c !default
+$orange: #FF9545 !default
 $white: #f7f7ff !default
 $whiter: #fff !default
 $blackish: #333 !default
@@ -26,9 +27,11 @@ $warning: $yellow !default
 $info: $blue !default
 $link: $blue !default
 
-$colors: ( "success": $success, "info": $info, "danger": $danger, "warning": $warning, "white": $whiter, "black": $blackish )
+$colors: ( "success": $success, "info": $info, "danger": $danger, "warning": $warning )
+$colornames: ("red": $red, "green": $green, "grey": $grey, "blue": $blue, "white": $whiter, "black": $blackish, "yellow": $yellow, "orange": $orange )
 $assets: ( "primary": $primary, "secondary": $secondary )
 
+$colors: map-merge( $colors, $colornames)
 $colors: map-merge( $colors, $assets)
 
 // Font helpers
